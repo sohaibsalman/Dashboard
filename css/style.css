@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: black;
+  color: white;
+  overflow: auto;
+}
+
+.sidebar header {
+  position: relative;
+}
+
+.sidebar header h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.sidebar header .admin-pic {
+  width: 70px;
+  margin: 0 auto;
+}
+
+.sidebar header p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sidebar header p span {
+  color: #acacac;
+  display: block;
+}
+
+.sidebar .sidebar-list {
+  display: block;
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+.sidebar .sidebar-list a {
+  display: block;
+  padding: 15px;
+  border-left: 5px solid transparent;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.sidebar .sidebar-list a:hover {
+  text-decoration: none;
+  border-left: 5px solid white;
+  background-color: #121212;
+  color: #bbbbbb;
+}
+
+.sidebar .sidebar-list a i {
+  margin-right: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.my-navbar {
+  background-color: #121212;
+  padding: 5px 0;
+}
+
+.my-navbar div, .my-navbar form {
+  display: inline;
+}
+
+.my-navbar div {
+  padding: 10px;
+}
+
+.my-navbar form input {
+  background-color: #0a0a0a;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 500px;
+  color: white;
+}
+
+.my-navbar form input:focus {
+  border: none;
+  outline: none;
+}
+
+.my-navbar .nav-dropdowns {
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 12px;
+}
+/*# sourceMappingURL=style.css.map */
