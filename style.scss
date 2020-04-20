@@ -90,8 +90,16 @@ body
 
 .my-navbar 
 {
-    background-color: #121212;
-    padding: 5px 0;
+    a 
+    {
+        &:hover 
+        {
+            text-decoration: none;
+        }
+    }
+    position: relative;
+    background-color: $color-gray-1;
+    padding: 8px 0;
     div, form
     {
         display: inline;
@@ -100,25 +108,76 @@ body
     {
         padding: 10px;
     }
-    form input 
+    .nav-logo a
     {
-        background-color: $color-gray-2;
-        border: none;
-        padding: 10px 25px;
-        border-radius: 500px;
         color: white;
-        &:focus 
+        text-decoration: none;
+        padding-left: 10px;
+        h5 
         {
+            display: inline;
+        }
+    }
+    .nav-search 
+    {
+        form input 
+        {
+            background-color: $color-gray-2;
             border: none;
-            outline: none;
+            padding: 10px 25px;
+            border-radius: 500px;
+            color: white;
+            &:focus 
+            {
+                border: none;
+                outline: none;
+            }
+        }
+        i 
+        {
+            color: white;
+            padding: 13px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: -48px;
+            cursor: pointer;
         }
     }
     .nav-dropdowns 
     {
         color: white;
-        background-color: black;
-        border-radius: 50%;
         cursor: pointer;
-        padding: 10px 12px;
+        i 
+        {
+            border-radius: 50%;
+            background-color: black;
+            margin-right: 10px;
+            padding: 14px;
+        }
+    }
+    .vertical-line
+    {
+        height: 100%;
+        width: 10px;
+        padding: .5px;
+        background-color: white;
+        margin: 0 10px;
+    }
+    .account 
+    {
+        .nav-pic 
+        {
+            width: 40px;
+        }
+        h6 
+        {
+            display: inline;
+            padding: 0 10px;
+            color: white;
+        }
+        a 
+        {
+            color: rgb(187, 187, 187);
+        }
     }
 }
