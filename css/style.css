@@ -8,6 +8,10 @@ body {
   width: 100%;
 }
 
+ul li {
+  list-style: none;
+}
+
 .sidebar {
   position: fixed;
   left: 0;
@@ -75,38 +79,40 @@ body {
   color: white;
 }
 
-.my-navbar {
+._navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #121212;
+  opacity: 100%;
   padding: 10px;
   text-align: center;
+  z-index: 100;
 }
 
-.my-navbar a:hover {
+._navbar a:hover {
   text-decoration: none;
 }
 
-.my-navbar div, .my-navbar form {
+._navbar div, ._navbar form {
   display: inline;
 }
 
-.my-navbar div {
+._navbar div {
   padding: 10px;
 }
 
-.my-navbar .nav-logo a {
+._navbar .nav-logo a {
   color: white;
   text-decoration: none;
   padding-left: 10px;
 }
 
-.my-navbar .nav-logo a h5 {
+._navbar .nav-logo a h5 {
   display: inline;
 }
 
-.my-navbar .nav-search form input {
+._navbar .nav-search form input {
   background-color: #0a0a0a;
   border: none;
   padding: 10px 25px;
@@ -114,12 +120,12 @@ body {
   color: white;
 }
 
-.my-navbar .nav-search form input:focus {
+._navbar .nav-search form input:focus {
   border: none;
   outline: none;
 }
 
-.my-navbar .nav-search i {
+._navbar .nav-search i {
   color: white;
   padding: 13px;
   background-color: black;
@@ -128,19 +134,19 @@ body {
   cursor: pointer;
 }
 
-.my-navbar .nav-dropdowns {
+._navbar .nav-dropdowns {
   color: white;
   cursor: pointer;
 }
 
-.my-navbar .nav-dropdowns i {
+._navbar .nav-dropdowns i {
   border-radius: 50%;
   background-color: black;
   margin-right: 10px;
   padding: 14px;
 }
 
-.my-navbar .vertical-line {
+._navbar .vertical-line {
   height: 100%;
   width: 10px;
   padding: .5px;
@@ -148,31 +154,31 @@ body {
   margin: 0 10px;
 }
 
-.my-navbar .account {
+._navbar .account {
   position: relative;
   -webkit-transition: .3s all;
   transition: .3s all;
 }
 
-.my-navbar .account .nav-pic {
+._navbar .account .nav-pic {
   width: 40px;
 }
 
-.my-navbar .account h6 {
+._navbar .account h6 {
   display: inline;
   padding: 0 10px;
   color: white;
 }
 
-.my-navbar .account a {
+._navbar .account a {
   color: #bbbbbb;
 }
 
-.my-navbar .account:hover .hover-links {
+._navbar .account:hover .hover-links {
   display: inline;
 }
 
-.my-navbar .hover-links {
+._navbar .hover-links {
   display: none;
   position: absolute;
   width: 100%;
@@ -183,7 +189,7 @@ body {
   text-align: left;
 }
 
-.my-navbar .hover-links a {
+._navbar .hover-links a {
   display: block;
   padding: 10px;
 }
@@ -203,17 +209,94 @@ body {
   padding: 20px;
 }
 
+.user-data {
+  margin-top: 10px;
+}
+
 .orders-data {
   padding: 30px;
   text-align: center;
 }
 
 .orders-data i {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .orders-data h1 {
-  font-size: 90px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-size: 60px;
+}
+
+._btn {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+._btn a {
+  color: white;
+  padding: 15px 80px;
+  border-radius: 500px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+._btn a:hover {
+  text-decoration: none;
+}
+
+._btn-black {
+  background-color: #121212;
+}
+
+._btn-black:hover {
+  color: white;
+  background-color: #0a0a0a;
+}
+
+.workers-stats {
+  font-size: 20px;
+  line-height: 40px;
+  padding: 20px 40px;
+}
+
+.time-stats {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.time-stats h4 {
+  text-align: left;
+}
+
+.time-stats h1 {
+  font-size: 50px;
+}
+
+.time-stats .chart-image {
+  margin: 0 auto;
+}
+
+.time-stats .chart-image img {
+  width: 250px;
+}
+
+.u-margin-top-huge {
+  margin-top: 50px;
+}
+
+.u-margin-top-large {
+  margin-top: 40px;
+}
+
+.u-margin-top-medium {
+  margin-top: 30px;
+}
+
+.u-margin-top-small {
+  margin-top: 20px;
+}
+
+.u-margin-top-tiny {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

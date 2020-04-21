@@ -13,6 +13,11 @@ body
     width: 100%;
 }
 
+ul li 
+{
+    list-style: none;
+}
+
 
 .sidebar 
 {
@@ -86,15 +91,15 @@ body
     }
     
 }
-
-
-.my-navbar 
+._navbar 
 {
     position: sticky;
     top: 0;
     background-color: $color-gray-1;
+    opacity: 100%;
     padding: 10px;
     text-align: center;
+    z-index: 100;
     a 
     {
         &:hover 
@@ -224,7 +229,7 @@ body
 
 .user-data 
 {
-
+    margin-top: 10px;
 }
 
 .orders-data
@@ -233,11 +238,77 @@ body
     text-align: center;
     i
     {
-        font-size: 25px;
+        font-size: 20px;
     }
     h1 
     {
-        font-size: 90px;
-        text-shadow: 0 0 10px rgba(black, .4);
+        font-size: 60px;
     }
 }
+
+._btn 
+{
+    text-align: center;
+    display: block;
+    width: 100%;
+    a 
+    {
+        color: white;
+        padding: 15px 80px;
+        border-radius: 500px;
+        transition: all .3s;
+        &:hover 
+        {
+            text-decoration: none;
+        }
+    }
+}
+
+._btn-black 
+{
+    background-color: $color-gray-1;
+    &:hover 
+    {
+        color: white;
+        background-color: $color-gray-2;
+    }
+}
+
+
+.workers-stats 
+{
+    font-size: 20px;
+    line-height: 40px;
+    padding: 20px 40px;
+}
+
+.time-stats
+{
+    padding: 20px 40px;
+    text-align: center;
+    h4 
+    {
+        text-align: left;
+    }
+    h1 
+    {
+        font-size: 50px;
+    }
+    .chart-image 
+    {
+        margin: 0 auto;
+        img {
+            width: 250px;
+        }
+    }
+}
+
+
+
+
+
+.u-margin-top-huge {margin-top: 50px;}
+.u-margin-top-large {margin-top: 40px;}
+.u-margin-top-medium {margin-top: 30px;}
+.u-margin-top-small {margin-top: 20px;}
+.u-margin-top-tiny {margin-top: 10px;}

@@ -15,7 +15,7 @@
 
 </body>
 
-<nav class="my-navbar">
+<nav class="_navbar">
     <div class="nav-logo"><a href="#">
             <h5>Tailor Management System</h5>
         </a></div>
@@ -66,8 +66,17 @@
         </header>
         <ul class="sidebar-list">
             <li><a href="#"> <i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#"> <i class="fas fa-sliders-h"></i> Settings</a></li>
-            <li><a href="#"> <i class="fas fa-plus-square"></i> New</a></li>
+            <li>
+                <a href="#"> <i class="fas fa-sliders-h"></i> Settings</a>
+            </li>
+            <li style="position: relative;">
+                <a href="#"> <i class="fas fa-plus-square"></i> New</a>
+                <ul class="hover-links">
+                    <li><a href="#">Customer</a></li>
+                    <li><a href="#">Worker</a></li>
+                    <li><a href="#">User</a></li>
+                </ul>
+            </li>
             <li><a href="#"> <i class="fas fa-undo"></i> Update</a></li>
             <li><a href="#"> <i class="fas fa-trash"></i> Delete</a></li>
             <li><a href="#"> <i class="fas fa-tasks"></i> Assign</a></li>
@@ -86,6 +95,7 @@
             </div>
         </div>
         <div class="row">
+
             <div class="col-md-4">
                 <div class="_shadow orders-data">
                     <i class="fas fa-calendar-plus"></i>
@@ -93,6 +103,7 @@
                     <h5>New Orders</h5>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div class="_shadow orders-data">
                     <i class="fas fa-calendar-plus"></i>
@@ -103,11 +114,53 @@
             <div class="col-md-4">
                 <div class="_shadow orders-data">
                     <i class="fas fa-calendar-plus"></i>
-                    <h1>47</h1>
-                    <h5>New Orders</h5>
+                    <h1>17</h1>
+                    <h5>Pending Orders</h5>
+                </div>
+            </div>
+            <div class="_btn u-margin-top-large">
+                <a href="#" class="_btn-black">See Order Details</a>
+            </div>
+        </div>
+
+        <div class="row u-margin-top-tiny">
+            <div class="col-md-7">
+                <div class="_shadow time-stats">
+                    <h4>Delivery Time Ratio</h4>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>On-time Order Delivery</h6>
+                            <h1>87%</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Late Order Delivery</h6>
+                            <h1>13%</h1>
+                        </div>
+                        <div class="chart-image">
+                            <img src="img/chart.jpg" alt="chart" class="img-fluid">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="_shadow workers-stats">
+                    <h4>Top Workers</h4>
+                    <hr>
+                    <ul>
+                        <li>Aanish Usman</li>
+                        <li>Salman Ali</li>
+                        <li>Emad Hassan</li>
+                        <li>Irtaza Nadeem</li>
+                        <li>Faizan Malik</li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
         </div>
+
+        
+
     </div>
 
 
