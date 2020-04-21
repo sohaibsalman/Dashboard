@@ -16,7 +16,9 @@
 </body>
 
 <nav class="my-navbar">
-    <div class="nav-logo"><a href="#"><h5>Tailor Management System</h5></a></div>
+    <div class="nav-logo"><a href="#">
+            <h5>Tailor Management System</h5>
+        </a></div>
     <div class="vertical-line"></div>
     <div class="nav-search">
         <form><input type="text" placeholder="Type to Search..."></form>
@@ -29,14 +31,24 @@
     <div class="vertical-line"></div>
     <div class="account">
         <img src="img/admin.png" alt="admin-pic" class="nav-pic">
-        <a href="#"><h6>Sohaib Salman</h6></a>
-        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        <a href="#">
+            <h6>Sohaib Salman</h6>
+        </a>
+        <div class="hover-links">
+            <ul>
+                <li>
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
 
 <aside class="sidebar">
-    <div class="content">
+    <div class="wrapper">
         <header>
             <h3>
                 Admin Panel
@@ -64,8 +76,42 @@
     </div>
 </aside>
 
-<section class="window">
+<section class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="_shadow user-data">
+                    <h4>Sohaib Salman</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="_shadow orders-data">
+                    <i class="fas fa-calendar-plus"></i>
+                    <h1>47</h1>
+                    <h5>New Orders</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="_shadow orders-data">
+                    <i class="fas fa-calendar-plus"></i>
+                    <h1>657</h1>
+                    <h5>Completed Orders</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="_shadow orders-data">
+                    <i class="fas fa-calendar-plus"></i>
+                    <h1>47</h1>
+                    <h5>New Orders</h5>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+    
 </section>
 
 

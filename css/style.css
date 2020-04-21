@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  width: 100%;
 }
 
 .sidebar {
@@ -75,9 +76,12 @@ body {
 }
 
 .my-navbar {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background-color: #121212;
-  padding: 8px 0;
+  padding: 10px;
+  text-align: center;
 }
 
 .my-navbar a:hover {
@@ -144,6 +148,12 @@ body {
   margin: 0 10px;
 }
 
+.my-navbar .account {
+  position: relative;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
 .my-navbar .account .nav-pic {
   width: 40px;
 }
@@ -156,5 +166,54 @@ body {
 
 .my-navbar .account a {
   color: #bbbbbb;
+}
+
+.my-navbar .account:hover .hover-links {
+  display: inline;
+}
+
+.my-navbar .hover-links {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  color: white;
+  left: 0;
+  top: 50px;
+  text-align: left;
+}
+
+.my-navbar .hover-links a {
+  display: block;
+  padding: 10px;
+}
+
+.content {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  height: 100%;
+  padding: 20px;
+}
+
+._shadow {
+  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin-top: 25px;
+  padding: 20px;
+}
+
+.orders-data {
+  padding: 30px;
+  text-align: center;
+}
+
+.orders-data i {
+  font-size: 25px;
+}
+
+.orders-data h1 {
+  font-size: 90px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 /*# sourceMappingURL=style.css.map */

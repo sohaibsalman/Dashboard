@@ -7,10 +7,10 @@ $color-gray-2: #0a0a0a;
     padding: 0;
 }
 
-
 body
 {
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
 
@@ -90,6 +90,11 @@ body
 
 .my-navbar 
 {
+    position: sticky;
+    top: 0;
+    background-color: $color-gray-1;
+    padding: 10px;
+    text-align: center;
     a 
     {
         &:hover 
@@ -97,9 +102,6 @@ body
             text-decoration: none;
         }
     }
-    position: relative;
-    background-color: $color-gray-1;
-    padding: 8px 0;
     div, form
     {
         display: inline;
@@ -165,6 +167,7 @@ body
     }
     .account 
     {
+        position: relative;
         .nav-pic 
         {
             width: 40px;
@@ -179,5 +182,62 @@ body
         {
             color: rgb(187, 187, 187);
         }
+        transition: .3s all;
+        &:hover .hover-links
+        {
+            display: inline;
+        }
+    }
+    .hover-links
+    {
+        display: none;
+        position: absolute;
+        width:  100%;
+        background-color: black;
+        color: white;
+        left: 0;
+        top: 50px;
+        text-align: left;
+        a 
+        {
+            display: block;
+            padding: 10px;
+        }
+    }
+}
+
+.content 
+{
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    height: 100%;
+    padding: 20px;
+}
+
+._shadow 
+{
+    box-shadow: 0 3px 12px rgba(black, .4);
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.user-data 
+{
+
+}
+
+.orders-data
+{
+    padding: 30px;
+    text-align: center;
+    i
+    {
+        font-size: 25px;
+    }
+    h1 
+    {
+        font-size: 90px;
+        text-shadow: 0 0 10px rgba(black, .4);
     }
 }
