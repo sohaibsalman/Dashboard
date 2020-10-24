@@ -5,5 +5,5 @@ A simple Admin Panel responsive design. This layout was desinged as a part of a 
 
 ## Technologies:
 - HTML
-- CSS/SASS
+- CSS/SCSS
 - Bootstrap
